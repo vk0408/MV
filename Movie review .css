@@ -1,0 +1,108 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color:beige;
+  color: #f0f0f0;
+  margin: 0;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  color: #f5c518;
+  margin-bottom: 30px;
+}
+
+.review-form {
+  background-color: black;
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 600px;
+  margin: auto;
+  margin-bottom: 40px;
+}
+
+.review-form select,
+.review-form textarea,
+.review-form button {
+  width: 100%;
+  margin-top: 10px;
+  margin-bottom: 15px;
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  font-size: 16px;
+}
+
+.review-form textarea {
+  resize: vertical;
+  height: 100px;
+  width:92%;
+}
+
+.review-form button {
+  background-color: #f5c518;
+  color: #000;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.review-form button:hover {
+  background-color: #e0b800;
+}
+
+#moviePreview {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-top: 10px;
+  border-top: 1px solid #333;
+  padding-top: 10px;
+}
+
+.poster {
+  width: 100px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.desc {
+  font-style: italic;
+  color: #ccc;
+}
+
+.review-card {
+  background-color: #2a2a2a;
+  margin: 15px auto;
+  padding: 15px;
+  border-radius: 10px;
+  max-width: 700px;
+}
+
+.card-content {
+  display: flex;
+  gap: 15px;
+}
+
+.details {
+  flex: 1;
+}
+
+.review-card h3 {
+  margin: 0;
+  color: #f5c518;
+}
+
+.stars {
+  font-size: 18px;
+  margin: 5px 0;
+}
+
+.imdb-link {
+  color: #f5c518;
+  text-decoration: underline;
+  display: inline-block;
+  margin-top: 5px;
+  margin-bottom: 10px;
+}

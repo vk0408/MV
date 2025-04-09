@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Movie Review</title>
+  <link rel="stylesheet" href="/storage/emulated/0/Documents/Movie review .css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Movie Review</h1>
+
+    <div class="review-form">
+      <select id="movieSelect" onchange="fillMovieDetails()">
+        <option value="">-- Select a Movie --</option>
+        <option value="inception">Inception</option>
+        <option value="interstellar">Interstellar</option>
+        <option value="joker">Joker</option>
+        <option value="avatar">Avatar</option>
+        <option value="darkKnight">The Dark Knight</option>
+        <option value="godfather">The Godfather</option>
+        <option value="parasite">Parasite</option>
+        <option value="shawshank">The Shawshank Redemption</option>
+        <option value="endgame">Avengers: Endgame</option>
+        <option value="spiderman">Spider-Man: No Way Home</option>
+      </select>
+
+      <div id="moviePreview" style="display: none;">
+        <img id="previewPoster" class="poster" />
+        <p id="previewDesc" class="desc"></p>
+      </div>
+
+      <textarea id="movieReview" placeholder="Write your review..." required></textarea>
+      <select id="movieRating">
+        <option value="1">★☆☆☆☆</option>
+        <option value="2">★★☆☆☆</option>
+        <option value="3">★★★☆☆</option>
+        <option value="4">★★★★☆</option>
+        <option value="5">★★★★★</option>
+      </select>
+      <button onclick="addReview()">Submit</button>
+    </div>
+
+    <h2>Your Reviews</h2>
+    <div id="reviewList"></div>
+  </div>
+
+  <script src="/storage/emulated/0/Documents/movie review .js"></script>
+</body>
+</html>
